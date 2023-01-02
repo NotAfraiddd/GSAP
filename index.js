@@ -21,4 +21,19 @@ gsap.from(".pages", { delay: 2.4, opacity: 0, y: 20, ease: "expo.easeInOut" });
 gsap.from(".more", { delay: 1.4, opacity: 0, y: 20, ease: "expo.easeInOut" });
 gsap.from(".desc", { delay: 1.4, opacity: 0, y: 20, ease: "expo.easeInOut" });
 
-
+gsap.fromTo(
+    ".more",
+    {
+        backgroundColor: " #00DBDE",
+        backgroundImage: "linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)",
+    },
+    {
+        // -1 là lặp vô hạn
+        repeat: -1,
+        //   yoyo có nghĩa là làm cho có sự lặp đi lặp lại, mượt hiệu ứng animation
+        yoyo: true,
+        duration: 3,
+        backgroundColor: "#21D4FD",
+        backgroundImage: " linear-gradient(90deg, #FAD961 0%, #F76B1C 100%)",
+    }
+);
